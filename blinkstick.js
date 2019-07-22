@@ -4,7 +4,7 @@
  * @module blinkstick
  */
 
-var isWin = /^win/.test(process.platform),
+var isWin = false,
     usb = isWin ? require('./HID') : require('usb');
 
 var VENDOR_ID = 0x20a0,
